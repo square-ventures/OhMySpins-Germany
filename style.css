@@ -215,8 +215,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   padding-inline: 20px;
+  gap: 32px;
   width: 100%;
 }
 @media screen and (min-width: 650px) {
@@ -229,12 +230,14 @@ body {
   .payments {
     margin-right: 56px;
     padding-inline: 0;
+    gap: 25px;
   }
 }
 @media screen and (min-width: 1920px) {
   .payments {
     margin-bottom: 5px;
     max-width: 850px;
+    gap: 40px;
   }
 }
 
