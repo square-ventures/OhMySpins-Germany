@@ -28,13 +28,12 @@ body {
   background-image: url(assets/mobile-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
   min-height: 100vh;
   color: white;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 700px) {
   body {
     background-image: url(assets/tablet-pr.png);
   }
@@ -72,12 +71,12 @@ body {
 
 @media screen and (min-width: 650px) {
   .main-image {
-    margin-top: 60px;
+    margin-top: 10px;
     width: 560px;
-    height: 391px;
+    height: 441px;
   }
 }
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   .main-image {
     margin-top: 0px;
     width: 514px;
@@ -121,13 +120,7 @@ body {
 .cta-button:hover {
   transform: scale(1.2);
 }
-@media screen and (min-width: 650px) {
-  .cta-button {
-    margin-top: 24px;
-    margin-bottom: 32px;
-  }
-}
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   .cta-button {
     margin: 0 0 8px 0;
   }
@@ -151,11 +144,10 @@ body {
 }
 @media screen and (min-width: 650px) {
   .steps {
-    gap: 30px;
-    margin-bottom: 41px;
+    gap: 36px;
   }
 }
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   .steps {
     margin-bottom: 0px;
   }
@@ -163,12 +155,12 @@ body {
 @media screen and (min-width: 1920px) {
   .steps {
     gap: 100px;
-    margin-bottom: 45px;
   }
 }
 @media screen and (min-width: 2000px) {
   .steps {
     margin-left: 0px;
+    margin-bottom: 40px;
   }
 }
 
@@ -179,7 +171,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   .step-1 {
     width: 217px;
     height: 71px;
@@ -192,7 +184,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   .step-2 {
     width: 221px;
     height: 71px;
@@ -205,7 +197,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   .step-3 {
     width: 278px;
     height: 71px;
@@ -230,6 +222,13 @@ body {
 @media screen and (min-width: 650px) {
   .payments {
     max-width: 580px;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .payments {
+    margin-right: 56px;
+    padding-inline: 0;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -238,14 +237,14 @@ body {
     max-width: 850px;
   }
 }
-@media screen and (min-width: 2000px) {
-  .payments {
-    margin-bottom: 24px;
-  }
-}
 
 .payment {
   height: 16px;
+}
+@media screen and (min-width: 650px) {
+  .payment {
+    height: 24px;
+  }
 }
 @media screen and (min-width: 1920px) {
   .payment {
@@ -268,42 +267,50 @@ footer {
   gap: 12px;
 }
 footer p {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
   line-height: 16px;
   padding-inline: 20px;
   text-align: center;
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 650px) {
   footer p {
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) {
   footer p {
     font-size: 11px;
     line-height: 16px;
     margin-bottom: 4px;
+    max-width: 960px;
   }
 }
 @media screen and (min-width: 1920px) {
   footer p {
     max-width: 1740px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
   }
 }
 
-.special-payment {
-  margin-top: 16px;
-}
 @media screen and (min-width: 650px) {
   .special-payment {
+    margin-top: 16px;
+    width: 204px;
+    height: 63px;
+    margin-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .special-payment {
     display: none;
+    width: 170px;
+    height: 40px;
     margin-top: 0;
   }
 }
@@ -311,14 +318,15 @@ footer p {
   .special-payment {
     width: 204px;
     height: 64px;
+    margin-bottom: 0;
   }
 }
 
 .payment-mobile {
   display: none;
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1024px) {
   .payment-mobile {
     display: block;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
