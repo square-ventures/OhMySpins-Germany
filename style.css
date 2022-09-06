@@ -301,6 +301,10 @@ footer p {
   }
 }
 
+.special-payment {
+  -webkit-animation: payment-animation 2s infinite;
+          animation: payment-animation 2s infinite;
+}
 @media screen and (min-width: 650px) {
   .special-payment {
     margin-top: 16px;
@@ -325,6 +329,29 @@ footer p {
   }
 }
 
+@-webkit-keyframes payment-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes payment-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .payment-mobile {
   display: none;
 }
